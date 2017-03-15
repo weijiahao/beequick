@@ -5,8 +5,8 @@ import React from 'react'
 class Me extends React.Component {
   render () {
     return (
-      <div>
-        我的
+      <div className='m-me'>
+          <header></header>
       </div>
     )
   }
