@@ -6,7 +6,7 @@ class Me extends React.Component {
   render () {
     return (
       <div>
-        个人中心
+        我的
       </div>
     )
   }
