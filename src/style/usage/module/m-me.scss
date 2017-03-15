@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.m-me{
+  @include flexbox();
+  @include flex-direction(column);
+  height: 100%;
+  header{
+    height: 1.2rem;
+    width: 100%;
+    background: #ffd600;
+  }
+}
