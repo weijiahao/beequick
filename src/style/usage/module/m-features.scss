@@ -1,0 +1,35 @@
+@charset "UTF-8";
+.m-features {
+    @include flexbox();
+    @include flex-direction(column);
+    height: 100%;
+    header {
+        height: 0.5rem;
+        @include flexbox();
+        background: #ffd600;
+        align-items: center;
+        div {
+            width: 20%;
+            text-align: center;
+            i {
+                font-size: 0.26rem;
+            }
+        }
+        h2 {
+            @include flex();
+            text-align: center;
+            font-size: 0.16rem;
+        }
+    }
+    >div {
+        @include flex();
+        width: 100%;
+        .swiper-wrapper {
+            .swiper-slide {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
