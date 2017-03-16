@@ -1,7 +1,9 @@
-var features = require('./features');
+var features = require('./features')
+var details = require('./details.json');
+
 module.exports = function () {
   return {
-    features: features
+    features: features,
+    details:details
   }
 }
-

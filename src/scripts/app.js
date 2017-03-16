@@ -9,6 +9,7 @@ import Features from './components/features'
 import USBox from './components/USBox'
 import Car from './components/car'
 import Me from './components/me'
+import Details from './components/details.jsx'
 
 import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 
@@ -27,6 +28,7 @@ ReactDom.render((
       <Route path='Car' onEnter={onEnterHandler.bind(this, 'car')} component={Car}></Route>
       <Route path='Me' onEnter={onEnterHandler.bind(this, 'me')} component={Me}></Route>
     </Route>
+    <Route path="/details/:id" component={Details}></Route>
   </Router>
   ), document.getElementById('app')
 )
