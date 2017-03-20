@@ -4,3 +4,19 @@
 /**
  * yo-header通用或全局扩展
  */
+
+@include yo-header(
+    $name:a,
+    $bgcolor:#f9fafd,
+    $border-color:#e0e0e0,
+    $color:#000,
+    $item-ico-color:#888,
+    $border-width:1px,
+    $height:.55rem,
+    $item-ico-size:.25rem,
+    $font-size:.16rem
+){
+  .title{
+    @include ellipsis();
+  }
+}

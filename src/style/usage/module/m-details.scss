@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@import "../fragment/yo-header.scss";
+
+.m-details{
+  height: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  > div{
+    @include flex();
+    width: 100%;
+    padding: .05rem;
+    > div.scroller{
+      i,b{
+        display: block;
+      }
+      i{
+        img{
+          width: 100%
+        }
+      }
+    }
+  }
+}
